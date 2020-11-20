@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.FXMLController">
+   <children>
+      <CheckBox fx:id="cb_sid" layoutX="39.0" layoutY="40.0" mnemonicParsing="false" text="学号" />
+      <TextField fx:id="tf_sid" layoutX="104.0" layoutY="36.0" />
+      <TextField fx:id="tf_sclass" layoutX="372.0" layoutY="37.0" />
+      <CheckBox fx:id="cb_sclass" layoutX="307.0" layoutY="41.0" mnemonicParsing="false" text="班级" />
+      <TextField fx:id="tf_sname" layoutX="104.0" layoutY="73.0" />
+      <CheckBox fx:id="cb_sname" layoutX="39.0" layoutY="77.0" mnemonicParsing="false" text="姓名" />
+      <TextField fx:id="tf_did" layoutX="372.0" layoutY="74.0" />
+      <CheckBox fx:id="cb_did" layoutX="307.0" layoutY="78.0" mnemonicParsing="false" text="系别" />
+      <TextField fx:id="tf_sage_from" layoutX="139.0" layoutY="113.0" prefHeight="23.0" prefWidth="45.0" />
+      <CheckBox fx:id="cb_sage" layoutX="39.0" layoutY="116.0" mnemonicParsing="false" text="年龄" />
+      <CheckBox fx:id="cb_ssex" layoutX="307.0" layoutY="116.0" mnemonicParsing="false" text="性别" />
+      <CheckBox fx:id="cb_ssex_m" layoutX="372.0" layoutY="116.0" mnemonicParsing="false" text="男" />
+      <CheckBox fx:id="cb_ssex_f" layoutX="453.0" layoutY="116.0" mnemonicParsing="false" text="女" />
+      <Label layoutX="104.0" layoutY="116.0" text="From" />
+      <Label layoutX="195.0" layoutY="117.0" text="To" />
+      <TextField fx:id="tf_sage_to" layoutX="220.0" layoutY="113.0" prefHeight="23.0" prefWidth="45.0" />
+      <Button fx:id="bt_search" layoutX="579.0" layoutY="38.0" mnemonicParsing="false" onAction="#search" prefHeight="93.0" prefWidth="60.0" text="查询" />
+      <TextArea fx:id="ta_sql" layoutX="39.0" layoutY="146.0" prefHeight="56.0" prefWidth="600.0" />
+      <TableView fx:id="tv_stu" layoutX="39.0" layoutY="213.0" prefHeight="178.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tc_sid" prefWidth="100.0" text="Sid" />
+          <TableColumn fx:id="tc_sname" prefWidth="100.0" text="Sname" />
+            <TableColumn fx:id="tc_sage" prefWidth="100.0" text="Sage" />
+            <TableColumn fx:id="tc_ssex" prefWidth="100.0" text="Ssex" />
+            <TableColumn fx:id="tc_did" prefWidth="100.0" text="Did" />
+            <TableColumn fx:id="tc_sclass" prefWidth="100.0" text="Sclass" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
